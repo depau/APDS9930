@@ -17,19 +17,19 @@ Getting Started
 * Copy the entire library directory (APDS-9930) to
 \<Arduino installation directory\>/libraries
 * Open the Arduino program
-* Select File -> Examples -> SparkFun_APDS9960 -> GestureTest
+* Select File -> Examples -> APDS9930 -> GestureTest
 * Plug in your Arduino and APDS-9930 with the following connections
 
 *-OR-*
 
 * Use the library manager
 
-| Arduino Pin | APDS-9960 Board | Function |
+| Arduino Pin | APDS-9930 Board | Function |
 |---|---|---| 
 | 3.3V | VCC | Power |
 | GND | GND | Ground |
-| A4 | SDA | I2C Data |
-| A5 | SCL | I2C Clock |
+| A4 | SDA | I²C Data |
+| A5 | SCL | I²C Clock |
 | 2 | INT | Interrupt |
 
 *P.S.: you already know you can't use this purple little thing with your 5V Arduino without a level shifter, right? :) In case you don't have a level shifter, you can detach the microcontroller from an Arduino Uno, reconnect the oscillator pins, the RX and TX pins, the reset and the LED/SCK pins back to the board with some jumper wires. You can then power the microcontroller from a 3.3V source (the 3V3 output on the board should work) and connect the sensor directly to the MCU. Look up "Arduino on Breadboard".*
@@ -53,9 +53,9 @@ Repository Contents
 Documentation
 --------------
 
-* **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
+* **[Quickstart Guide](http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)** - Basic hookup guide for the sensor.
 * **[Product Repository](https://github.com/Davideddu/APDS9930)** - Main repository (including hardware files) for the APDS9930 ambient light and proximity sensor.
-* **[Quickstart Guide](https://learn.sparkfun.com/tutorials/bmp180-barometric-pressure-sensor-hookup-)** - Basic hookup guide for the sensor.
+* **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 
 
 Version History
