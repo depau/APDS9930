@@ -1,7 +1,9 @@
 /****************************************************************
 ProximityLED.ino
 Davide Depau
-July 23, 2015
+December 11, 2015
+https://github.com/Davideddu/APDS9930
+
 https://github.com/sparkfun/APDS-9930_RGB_and_Gesture_Sensor
 
 Tests the proximity sensing abilities of the APDS-9930.

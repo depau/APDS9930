@@ -1,13 +1,17 @@
 /****************************************************************
-ColorSensor.ino
-APDS-9930 RGB and Gesture Sensor
+AmbientLightSensor.ino
+APDS-9930 Ambient light and proximity sensor
+Davide Depau
+December 11, 2015
+https://github.com/Davideddu/APDS9930
+
 Shawn Hymel @ SparkFun Electronics
 October 15, 2014
 https://github.com/sparkfun/APDS-9930_RGB_and_Gesture_Sensor
 
-Tests the color and ambient light sensing abilities of the 
+Tests thembient light sensing abilities of the 
 APDS-9930. Configures APDS-9930 over I2C and polls the sensor for
-ambient light and color levels, which are displayed over the 
+ambient light levels, which are displayed over the 
 serial console.
 
 Hardware Connections:
@@ -25,8 +29,8 @@ Resources:
 Include Wire.h and APDS-9930.h
 
 Development environment specifics:
-Written in Arduino 1.0.5
-Tested with SparkFun Arduino Pro Mini 3.3V
+Written in Arduino 1.6.5
+Tested with Arduino Uno and Mega.
 
 This code is beerware; if you see me (or any other SparkFun 
 employee) at the local, and you've found our code helpful, please
@@ -53,7 +57,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println();
   Serial.println(F("--------------------------------"));
-  Serial.println(F("SparkFun APDS-9930 - ColorSensor"));
+  Serial.println(F("APDS-9930 - Ambient light sensor"));
   Serial.println(F("--------------------------------"));
   
   // Initialize APDS-9930 (configure I2C and initial values)

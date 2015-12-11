@@ -1,9 +1,9 @@
 /****************************************************************
-AmbientLightLED.ino
+AmbientLightToneAC.ino
 
-Tests the color and ambient light sensing abilities of the 
+Tests the ambient light sensing abilities of the 
 APDS-9930. Configures APDS-9930 over I2C and polls the sensor for
-ambient light and color levels, which are displayed over the 
+ambient light levels, which are displayed over the 
 serial console.
 
 Hardware Connections:
@@ -42,7 +42,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println();
   Serial.println(F("--------------------------------"));
-  Serial.println(F("SparkFun APDS-9930 - ColorSensor"));
+  Serial.println(F("APDS-9930 - Ambient light sensor"));
   Serial.println(F("--------------------------------"));
   
   // Initialize APDS-9930 (configure I2C and initial values)

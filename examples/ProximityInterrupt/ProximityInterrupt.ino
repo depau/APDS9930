@@ -1,6 +1,10 @@
 /****************************************************************
 ProximityInterrupt.ino
-APDS-9930 RGB and Gesture Sensor
+APDS-9930 Ambient light and proximity sensor
+Davide Depau
+December 11, 2015
+https://github.com/Davideddu/APDS9930
+
 Shawn Hymel @ SparkFun Electronics
 October 24, 2014
 https://github.com/sparkfun/APDS-9930_RGB_and_Gesture_Sensor
@@ -27,8 +31,8 @@ Resources:
 Include Wire.h and APDS9930.h
 
 Development environment specifics:
-Written in Arduino 1.0.5
-Tested with SparkFun Arduino Pro Mini 3.3V
+Written in Arduino 1.6.5
+Tested with Arduino Uno and Mega
 
 This code is beerware; if you see me (or any other SparkFun 
 employee) at the local, and you've found our code helpful, please

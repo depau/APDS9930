@@ -1,19 +1,23 @@
 /****************************************************************
-ProximityTest.ino
-APDS-9960 RGB and Gesture Sensor
+ProximitySensor.ino
+APDS-9930 ambient light and proximity sensor
+Davide Depau
+December 11, 2015
+https://github.com/Davideddu/APDS9930
+
 Shawn Hymel @ SparkFun Electronics
 October 28, 2014
 https://github.com/sparkfun/APDS-9960_RGB_and_Gesture_Sensor
 
-Tests the proximity sensing abilities of the APDS-9960.
-Configures the APDS-9960 over I2C and polls for the distance to
+Tests the proximity sensing abilities of the APDS-9930.
+Configures the APDS-9930 over I2C and polls for the distance to
 the object nearest the sensor.
 
 Hardware Connections:
 
-IMPORTANT: The APDS-9960 can only accept 3.3V!
+IMPORTANT: The APDS-9930 can only accept 3.3V!
  
- Arduino Pin  APDS-9960 Board  Function
+ Arduino Pin  APDS-9930 Board  Function
  
  3.3V         VCC              Power
  GND          GND              Ground
@@ -21,7 +25,7 @@ IMPORTANT: The APDS-9960 can only accept 3.3V!
  A5           SCL              I2C Clock
 
 Resources:
-Include Wire.h and SparkFun_APDS-9960.h
+Include Wire.h and SparkFun_APDS-9930.h
 
 Development environment specifics:
 Written in Arduino 1.0.5
@@ -53,7 +57,7 @@ void setup() {
   Serial.println(F("APDS-9930 - ProximitySensor"));
   Serial.println(F("---------------------------"));
   
-  // Initialize APDS-9960 (configure I2C and initial values)
+  // Initialize APDS-9930 (configure I2C and initial values)
   if ( apds.init() ) {
     Serial.println(F("APDS-9930 initialization complete"));
   } else {
@@ -65,7 +69,7 @@ void setup() {
   //   Serial.println(F("Something went wrong trying to set PGAIN"));
   // }
   
-  // Start running the APDS-9960 proximity sensor (no interrupts)
+  // Start running the APDS-9930 proximity sensor (no interrupts)
   if ( apds.enableProximitySensor(false) ) {
     Serial.println(F("Proximity sensor is now running"));
   } else {
