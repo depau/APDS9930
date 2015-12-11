@@ -176,7 +176,7 @@ bool APDS9930::setMode(uint8_t mode, uint8_t enable)
 }
 
 /**
- * @brief Starts the light (R/G/B/Ambient) sensor on the APDS-9930
+ * @brief Starts the light (Ambient/IR) sensor on the APDS-9930
  *
  * @param[in] interrupts true to enable hardware interrupt on high or low light
  * @return True if sensor enabled correctly. False on error.
@@ -305,7 +305,7 @@ bool APDS9930::disablePower()
 }
 
 /*******************************************************************************
- * Ambient light and color sensor controls
+ * Ambient light sensor controls
  ******************************************************************************/
 
 /**
