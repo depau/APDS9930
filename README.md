@@ -3,9 +3,11 @@ APDS9930 Ambient Light and Proximity sensor
 
 This is a fork of the [library from Sparkfun for the APDS-9960 sensor](https://github.com/sparkfun/APDS-9960_RGB_and_Gesture_Sensor). It has been adapted to read values from this other model.
 
-![Avago APDS-9930 Breakout Board](http://img.dxcdn.com/productimages/sku_384037_1.jpg)
+[**Quick-start guide available here**](http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)
 
-[*Avago APDS-9930 Breakout Board*](http://eud.dx.com/product/apds-9960-rgb-gesture-sensor-board-module-w-i2c-interface-purple-844384037)
+[**Purchase an Avago APDS-9930 Breakout Board here**](http://www.dx.com/p/384037?Utm_rid=14976370&Utm_source=affiliate)
+
+![Avago APDS-9930 Breakout Board](http://img.dxcdn.com/productimages/sku_384037_1.jpg)
 
 **Note:** even though it says APDS-9960, it's an APDS-9930. That's how I ended up getting one of those. I wanted the RGB sensor. I found this crap in my mailbox. But I decided to write a library for it anyways ;)
 

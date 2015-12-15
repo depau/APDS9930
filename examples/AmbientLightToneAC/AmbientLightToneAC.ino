@@ -99,7 +99,8 @@ void loop() {
     Serial.print(F("  Ch1: "));
     Serial.println(ch1);
 
-    toneAC(ambient_light, 10, 50, true);
+    unsigned long freq = map(ch0, 0, 1024, 60, 16000);
+    toneAC(freq, 10, 50, true);
   }
   
   // Wait 1 second before next reading
