@@ -40,6 +40,7 @@
 /* APDS-9930 register addresses */
 #define APDS9930_ENABLE         0x00
 #define APDS9930_ATIME          0x01
+#define APDS9930_PTIME          0x02
 #define APDS9930_WTIME          0x03
 #define APDS9930_AILTL          0x04
 #define APDS9930_AILTH          0x05
@@ -136,7 +137,7 @@
 
 /* State definitions */
 enum {
-  NA_STATE,
+  NOTAVAILABLE_STATE,
   NEAR_STATE,
   FAR_STATE,
   ALL_STATE
