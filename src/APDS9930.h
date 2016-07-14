@@ -143,6 +143,11 @@ enum {
   ALL_STATE
 };
 
+#ifdef _AVR_IO_H_
+    // Do not use this alias as it's deprecated
+    #define NA_STATE NOTAVAILABLE_STATE
+#endif
+
 /* APDS9930 Class */
 class APDS9930 {
 public:
