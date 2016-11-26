@@ -318,7 +318,6 @@ bool APDS9930::readAmbientLightLux(float &val)
 {
     uint16_t Ch0;
     uint16_t Ch1;
-    uint8_t val_byte;
     
     /* Read value from channel 0 */
     if( !readCh0Light(Ch0) ) {
@@ -331,13 +330,13 @@ bool APDS9930::readAmbientLightLux(float &val)
     }
 
     val = floatAmbientToLux(Ch0, Ch1);
+    return true;
 }
 
 bool APDS9930::readAmbientLightLux(unsigned long &val)
 {
     uint16_t Ch0;
     uint16_t Ch1;
-    uint8_t val_byte;
     
     /* Read value from channel 0 */
     if( !readCh0Light(Ch0) ) {
@@ -350,6 +349,7 @@ bool APDS9930::readAmbientLightLux(unsigned long &val)
     }
 
     val = ulongAmbientToLux(Ch0, Ch1);
+    return true;
 }
 
 float APDS9930::floatAmbientToLux(uint16_t Ch0, uint16_t Ch1)
