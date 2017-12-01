@@ -215,9 +215,9 @@ public:
 //private:
 
     /* Proximity Interrupt Threshold */
-    uint8_t getProximityIntLowThreshold();
+    uint16_t getProximityIntLowThreshold();
     bool setProximityIntLowThreshold(uint16_t threshold);
-    uint8_t getProximityIntHighThreshold();
+    uint16_t getProximityIntHighThreshold();
     bool setProximityIntHighThreshold(uint16_t threshold);
     
     /* Raw I2C Commands */

@@ -439,7 +439,7 @@ bool APDS9930::readProximity(uint16_t &val)
  *
  * @return lower threshold
  */
-uint8_t APDS9930::getProximityIntLowThreshold()
+uint16_t APDS9930::getProximityIntLowThreshold()
 {
     uint16_t val;
     uint8_t val_byte;
@@ -452,7 +452,7 @@ uint8_t APDS9930::getProximityIntLowThreshold()
     if( !wireReadDataByte(APDS9930_PILTH, val_byte) ) {
         val = 0;
     }
-    val += ((uint16_t)val_byte << 8);    
+    val |= ((uint16_t)val_byte << 8);    
     
     return val;
 }
@@ -485,7 +485,7 @@ bool APDS9930::setProximityIntLowThreshold(uint16_t threshold)
  *
  * @return high threshold
  */
-uint8_t APDS9930::getProximityIntHighThreshold()
+uint16_t APDS9930::getProximityIntHighThreshold()
 {
     uint16_t val;
     uint8_t val_byte;
@@ -498,7 +498,7 @@ uint8_t APDS9930::getProximityIntHighThreshold()
     if( !wireReadDataByte(APDS9930_PIHTH, val_byte) ) {
         val = 0;
     }
-    val += ((uint16_t)val_byte << 8);    
+    val |= ((uint16_t)val_byte << 8);    
     
     return val;
 }
