@@ -112,7 +112,7 @@
 #define CLEAR_ALL_INTS          0xE7
 
 /* Default values */
-#define DEFAULT_ATIME           0xFF
+#define DEFAULT_ATIME           0xED
 #define DEFAULT_WTIME           0xFF
 #define DEFAULT_PTIME           0xFF
 #define DEFAULT_PPULSE          0x08
@@ -121,7 +121,7 @@
 #define DEFAULT_PDRIVE          LED_DRIVE_100MA
 #define DEFAULT_PDIODE          2
 #define DEFAULT_PGAIN           PGAIN_8X
-#define DEFAULT_AGAIN           AGAIN_16X
+#define DEFAULT_AGAIN           AGAIN_1X
 #define DEFAULT_PILT            0       // Low proximity threshold
 #define DEFAULT_PIHT            50      // High proximity threshold
 #define DEFAULT_AILT            0xFFFF  // Force interrupt for calibration
