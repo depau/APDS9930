@@ -3,7 +3,7 @@ APDS9930 Ambient Light and Proximity sensor
 
 This is a fork of the [library from Sparkfun for the APDS-9960 sensor](https://github.com/sparkfun/APDS-9960_RGB_and_Gesture_Sensor). It has been adapted to read values from this other model.
 
-[**Quick-start guide available here**](http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)
+[**Quick-start guide available here**](https://web.archive.org/web/20151224052223/http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)
 
 [**Purchase an Avago APDS-9930 Breakout Board here**](http://www.dx.com/p/384037?Utm_rid=14976370&Utm_source=affiliate)
 
@@ -62,7 +62,7 @@ Repository Contents
 Documentation
 --------------
 
-* **[Quickstart Guide](http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)** - Basic hookup guide for the sensor.
+* **[Quickstart Guide](https://web.archive.org/web/20151224052223/http://davideddu.org/blog/posts/apds-9930-arduino-quickstart/)** - Basic hookup guide for the sensor.
 * **[Product Repository](https://github.com/Davideddu/APDS9930)** - Main repository (including hardware files) for the APDS9930 ambient light and proximity sensor.
 * **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 
@@ -85,10 +85,6 @@ License Information
 -------------------
 
 This product is _**open source**_! 
-
-The **code** is beerware; if you see the guy who originally made this (or any other SparkFun employee) at the local, and you've found our code helpful, please buy them a round!
-
-If you find *me* at the local, buy me peach-flavoured vodka + mango juice - I don't drink beer :D
 
 Please use, reuse, and modify these files as you see fit. Please maintain attribution to SparkFun Electronics and release anything derivative under the same license.
 
