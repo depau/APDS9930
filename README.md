@@ -79,7 +79,6 @@ Version History
 * Ambient light interrupts working
 * Proximity sensing implemented
 * Proximity interrupts working
-* Gesture (UP, DOWN, LEFT, RIGHT, NEAR, FAR) sensing implemented
 
 License Information
 -------------------
