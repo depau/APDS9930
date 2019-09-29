@@ -131,9 +131,9 @@
 /* ALS coefficients */
 #define DF                      52
 #define GA                      0.49
-#define B                       1.862
-#define C                       0.746
-#define D                       1.291
+#define ALS_B                       1.862
+#define ALS_C                       0.746
+#define ALS_D                       1.291
 
 /* State definitions */
 enum {
